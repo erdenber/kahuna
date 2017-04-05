@@ -58,15 +58,16 @@ DEBUG = 0
 
 
 # avrdude programmer protocol
-PROG = usbasp
+#PROG = usbasp
 # use avrisp for Arduino as ISP
-#PROG = avrisp 
+PROG = avrisp 
 
 # avrdude programmer device
-DEV = usb
+#DEV = usb
+DEV = /dev/cu.usbmodem14131
 
 # further flags for avrdude
-AVRDUDE_FLAGS =
+AVRDUDE_FLAGS = -b 19200 -v
 
 ####################################################
 # 'make' configuration
